@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>text-outline (text-shadow) generator</title>
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="demo" contenteditable="true">FONT-OUTLINE</div>
+<div id="settings">
+  <table>
+    <tr>
+      <th colspan="2" align="left">Настройки текста</th>
+    </tr>
+    <tr>
+      <td>
+        <label for="font-size">font-size</label>
+      </td>
+      <td>
+        <input id="font-size" type="number" min="10" value="60" max="100"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="font-weight">font-weight</label>
+      </td>
+      <td>
+        <input id="font-weight" type="number" min="100" value="700" max="900" step="100"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="font-color">color</label>
+      </td>
+      <td>
+        <input id="font-color" type="color" value="#333333"/>
+      </td>
+    </tr>
+  </table>
+  <table>
+    <tr>
+      <th colspan="2" align="left">Настройки обводки</th>
+    </tr>
+    <tr>
+      <td>
+        <label for="shadow-width">width</label>
+      </td>
+      <td>
+        <input id="shadow-width" type="number" min="0" value="2" max="100"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="shadow-segments">segments</label>
+      </td>
+      <td>
+        <input id="shadow-segments" type="number" min="4" value="4" max="128" step="2"/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="shadow-color">color</label>
+      </td>
+      <td>
+        <input id="shadow-color" type="color" value="#ff0000"/>
+      </td>
+    </tr>
+  </table>
+</div>
+<pre id="pre"></pre>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
